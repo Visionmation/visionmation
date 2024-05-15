@@ -1,0 +1,425 @@
+body {
+	font-size: 12px;
+	font-family: sans-serif;
+
+	background-color: beige;
+}
+
+nav {
+	margin: 27px auto 0;
+
+	position: relative;
+	width: 590px;
+	height: 50px;
+	background-color: #34495e;
+	border-radius: 8px;
+	font-size: 0;
+}
+
+nav a {
+	line-height: 50px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+}
+
+nav .animation {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 8px;
+}
+
+a:nth-child(1) {
+	width: 100px;
+}
+
+a:nth-child(2) {
+	width: 110px;
+}
+
+a:nth-child(3) {
+	width: 100px;
+}
+
+a:nth-child(4) {
+	width: 160px;
+}
+
+a:nth-child(5) {
+	width: 120px;
+}
+
+nav .start-home,
+a:nth-child(1):hover~.animation {
+	width: 100px;
+	left: 0;
+	background-color: #1abc9c;
+}
+
+nav .start-about,
+a:nth-child(2):hover~.animation {
+	width: 110px;
+	left: 100px;
+	background-color: #e74c3c;
+}
+
+nav .start-blog,
+a:nth-child(3):hover~.animation {
+	width: 100px;
+	left: 210px;
+	background-color: #3498db;
+}
+
+nav .start-portefolio,
+a:nth-child(4):hover~.animation {
+	width: 160px;
+	left: 310px;
+	background-color: #9b59b6;
+}
+
+nav .start-contact,
+a:nth-child(5):hover~.animation {
+	width: 120px;
+	left: 470px;
+	background-color: #e67e22;
+}
+
+
+span {
+	color: #2BD6B4;
+}
+
+.font-poppins {
+	font-family: 'Poppins', sans-serif
+}
+
+.font-nunito {
+	font-family: 'Nunito', sans-serif
+}
+
+
+/* 
+* Design by Robert Mayer:https://goo.gl/CJ7yC8
+*
+*I intentionally left out the line that was supposed to be below the subheader simply because I don't like how it looks.
+*
+* Chronicle Display Roman font was substituted for similar fonts from Google Fonts.
+*/
+
+.container {
+	display: flex;
+	margin: 30px;
+	width: auto;
+	height: 300px;
+	flex-wrap: wrap;
+}
+
+.wrapper {
+	height: 120px;
+	width: 213px;
+
+	border-radius: 7px 7px 7px 7px;
+	/* VIA CSS MATIC https://goo.gl/cIbnS */
+	-webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+	box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+}
+
+.product-img {
+
+	height: auto;
+	width: 210px;
+}
+
+.product-img img {
+	border-radius: 7px 0 0 7px;
+}
+
+.product-info {
+
+	height: 220px;
+	width: 210px;
+	border-radius: 0 7px 10px 7px;
+	background-color: #ffffff;
+}
+
+.product-text {
+	height: 160px;
+	width: 210px;
+}
+
+.product-text h1 {
+	margin: 0 0 0 10px;
+	padding-top: 5px;
+	font-size: 20px;
+	color: #474747;
+}
+
+.product-text h1,
+.product-price-btn p {
+	font-family: 'Bentham', serif;
+}
+
+.product-text p {
+	width: 160px;
+	height: 125px;
+	margin: 0 0 0 10px;
+	font-family: 'Playfair Display', serif;
+	color: #8d8d8d;
+	line-height: 1.7em;
+	font-size: 15px;
+	font-weight: lighter;
+	overflow: hidden;
+}
+
+.product-price-btn {
+	height: 10px;
+	width: 250px;
+	margin-top: 12px;
+	position: relative;
+}
+
+.product-price-btn p {
+	display: inline-block;
+	position: absolute;
+	top: 5px;
+	height: 5px;
+	font-family: 'Trocchi', serif;
+	margin: 0 0 0 26px;
+	font-size: 28px;
+	font-weight: lighter;
+	color: #474747;
+}
+
+span {
+	display: inline-block;
+	height: 50px;
+	font-family: 'Suranna', serif;
+	padding-right: 10PX;
+	
+	font-size: 20px;
+}
+
+.product-price-btn button {
+	float: right;
+	display: inline-block;
+	height: 40px;
+	width: 100px;
+	margin: 0 50px 0 16px;
+	box-sizing: border-box;
+	border: transparent;
+	border-radius: 60px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	color: #ffffff;
+	background-color: #9cebd5;
+	cursor: pointer;
+	outline: none;
+}
+
+.product-price-btn button:hover {
+	background-color: #79b0a1;
+}
+
+.store {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:700px)
+{
+	
+	
+	
+	nav {
+		margin: 27px auto 0;
+		
+		position: relative;
+		width: fit-content;
+		height: 50px;
+		background-color: #34495e;
+		border-radius: 8px;
+		font-size: 0;
+	}
+	
+	nav a {
+		line-height: 50px;
+		height: 100%;
+		font-size: 10px;
+		display: inline-block;
+		position: relative;
+		z-index: 1;
+		text-decoration: none;
+		text-transform: uppercase;
+		text-align: center;
+		color: white;
+		cursor: pointer;
+	}
+	
+	nav .animation {
+		position: absolute;
+		height: 100%;
+		top: 0;
+		z-index: 0;
+		transition: all .5s ease 0s;
+		border-radius: 8px;
+	}
+	
+	a:nth-child(1) {
+		width: 60px;
+	}
+	
+	a:nth-child(2) {
+		width: 60px;
+	}
+	
+	a:nth-child(3) {
+		width: 70px;
+	}
+	
+	a:nth-child(4) {
+		width: 75px;
+	}
+	
+	a:nth-child(5) {
+		width: 78px;
+	}
+	
+	nav .start-home,
+	a:nth-child(1):hover~.animation {
+		width: 60px;
+		left: 0;
+		background-color: #1abc9c;
+	}
+	
+	nav .start-about,
+	a:nth-child(2):hover~.animation {
+	width: 60px;
+	left: 60px;
+	background-color: #e74c3c;
+}
+
+nav .start-blog,
+a:nth-child(3):hover~.animation {
+	width: 75px;
+	left: 115px;
+	background-color: #3498db;
+}
+
+nav .start-portefolio,
+a:nth-child(4):hover~.animation {
+	width: 75px;
+	left: 195px;
+	background-color: #9b59b6;
+}
+
+nav .start-contact,
+a:nth-child(5):hover~.animation {
+	width: 85px;
+	left: 289px;
+	background-color: #e67e22;
+}
+
+
+span {
+	color: #2BD6B4;
+}
+
+.font-poppins {
+	font-family: 'Poppins', sans-serif
+}
+
+.font-nunito {
+	font-family: 'Nunito', sans-serif
+}
+
+
+
+
+}
+
+
+
+.popup img {
+	z-index: 5;
+	width: 40%;
+	height: auto;
+	top: 40px;
+
+}
+
+/* CSS for the pop-up modal */
+
+.popup {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 90%;
+	height: 90%;
+	max-width: 800px; /* optional: set a maximum width */
+	max-height: 600px; /* optional: set a maximum height */
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	z-index: 999;
+	overflow: auto; /* enable scrolling if content exceeds popup dimensions */
+	padding: 20px; /* add padding for content */
+	box-sizing: border-box; /* include padding in width and height */
+}
+
+
+.popup-content {
+	position: absolute;
+	width: 80%;
+	height: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.popup-content li {
+	list-style-type: none;
+	margin: 25px;
+}
+
+
+
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
